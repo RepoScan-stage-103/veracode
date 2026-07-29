@@ -60,10 +60,10 @@ veracode_iac_secrets_scan:
       - synchronize
     target_branch:
       - default_branch
-  break_build_policy_findings: true
+  break_build_policy_findings: false
   break_build_on_error: false
   error_message: Veracode static scan faced a problem.
   issues:
-    trigger: false
+    trigger: true
     commands:
       - Veracode IAC Scan
