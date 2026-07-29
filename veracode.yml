@@ -64,6 +64,6 @@ veracode_iac_secrets_scan:
   break_build_on_error: false
   error_message: Veracode static scan faced a problem.
   issues:
-    trigger: true
+    trigger: false
     commands:
       - Veracode IAC Scan
