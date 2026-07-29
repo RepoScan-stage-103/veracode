@@ -56,8 +56,7 @@ veracode_iac_secrets_scan:
   pull_request:
     trigger: true
     action:
-      - opened
-      - synchronize
+      - closed
     target_branch:
       - master
   break_build_policy_findings: false
