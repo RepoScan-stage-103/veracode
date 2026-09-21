@@ -50,7 +50,7 @@ veracode_iac_secrets_scan:
   push:
     trigger: true
     branches_to_run:
-      - master
+      - js-dynamic
     branches_to_exclude:
       - branch-1
   pull_request:
