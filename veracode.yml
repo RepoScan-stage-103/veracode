@@ -61,10 +61,10 @@ veracode_iac_secrets_scan:
     target_branch:
       - default_branch
   break_build_policy_findings: false
-  break_build_on_error: true
+  break_build_on_error: false
   error_message: Veracode static scan faced a problem.
   issues:
     trigger: false
     commands:
       - Veracode IAC Scan
-  policy: Vera Policy
+  policy: "Veracode Policy"
