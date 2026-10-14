@@ -68,7 +68,8 @@ veracode_iac_secrets_scan:
     commands:
       - Veracode IAC Scan
   policy: Veracode Recommended High
-default: {}
+default:
+  runs_on: ubuntu-latest
 actions:
   veracode_iac_secrets_scan:
     push:
