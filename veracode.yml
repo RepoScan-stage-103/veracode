@@ -70,3 +70,7 @@ veracode_iac_secrets_scan:
   policy: Veracode Recommended High
 default:
   runs_on: ubuntu-latest
+actions:
+  veracode_iac_secrets_scan:
+    push:
+      trigger: false
