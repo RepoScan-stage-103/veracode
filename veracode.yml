@@ -68,14 +68,9 @@ veracode_iac_secrets_scan:
     commands:
       - Veracode IAC Scan
   policy: Veracode Recommended High
-default:
-  runs_on: ubuntu-latest
+default: {}
 actions:
   veracode_iac_secrets_scan:
     push:
       trigger: false
     build: {}
-  veracode_iac_scan:
-    build:
-      runs_on: ubuntu-latest
-      packager_image: 'veracode/scm-packaging:5.0.0'
