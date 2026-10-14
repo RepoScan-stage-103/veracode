@@ -74,3 +74,5 @@ actions:
   veracode_iac_secrets_scan:
     push:
       trigger: false
+    build:
+      runs_on: ubuntu-latest
