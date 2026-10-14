@@ -72,7 +72,7 @@ default:
 actions:
   veracode_iac_secrets_scan:
     push:
-      trigger: false
+      trigger: true
   veracode_static_scan:
     push:
       trigger: false
