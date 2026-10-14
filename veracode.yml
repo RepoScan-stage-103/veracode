@@ -67,15 +67,3 @@ veracode_iac_secrets_scan:
     trigger: false
     commands:
       - Veracode IAC Scan
-default:
-  runs_on: ubuntu-latest
-actions:
-  veracode_static_scan:
-    push:
-      trigger: false
-  veracode_sca_scan:
-    push:
-      trigger: false
-  veracode_iac_secrets_scan:
-    push:
-      trigger: false
